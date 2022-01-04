@@ -3,7 +3,7 @@ cquad <- function(formula, data, index=NULL, model=c("basic","equal","extended",
 
 # INTERFACE FOR CQUAD ACCEPTING A FORMULA IN INPUT
 #
-# formula : formula with the same sintax as in plm
+# formula : formula with the same syntax as in plm
 # data    : data.frame or pdata.frame
 # index   : to denote panel structure as in plm
 # model   : type of model = "basic", "equal", "extended", "pseudo"
@@ -13,10 +13,10 @@ cquad <- function(formula, data, index=NULL, model=c("basic","equal","extended",
 # preliminaries
 	model = match.arg(model)
 	if (!inherits(data, "pdata.frame")) data <- pdata.frame(data, index)
-	if (!inherits(formula, "pFormula")) formula <- pFormula(formula)
-	data <- model.frame(formula, data)
-	X = model.matrix(formula, data)[,-1]
-	yv = pmodel.response(formula, data)
+	if (!inherits(formula, "Formula")) formula <- Formula(formula)
+	data <- model.frame(data, formula)
+	X = model.matrix(data)[,-1]
+	yv = pmodel.response(data, formula)
 	id = attr(data,"index")[,1] 
 	n = length(unique(id))
 # call model

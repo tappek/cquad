@@ -12,7 +12,7 @@
 %- maybe also 'usage' for other objects documented here.
 
 \arguments{
-  \item{formula}{formula with the same sintax as in plm package}
+  \item{formula}{formula with the same syntax as in plm package}
   \item{data}{data.frame or pdata.frame}
   \item{index}{to denote panel structure as in plm package}
   \item{model}{type of model = "basic", "equal", "extended", "pseudo"}
