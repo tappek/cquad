@@ -18,7 +18,7 @@
   \item{model}{type of model = "basic", "equal", "extended", "pseudo"}
   \item{w}{vector of weights (optional)}
   \item{dyn}{TRUE if in the dynamic version; FALSE for the static version (by default)}
-  \item{Ttol}{Treshold individual observations that activates the recursive algorithm (default=10)}
+  \item{Ttol}{Threshold individual observations that activates the recursive algorithm (default=10)}
 }
 
 \value{

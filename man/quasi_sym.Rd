@@ -3,7 +3,7 @@
 \alias{quasi_sym}
 %- Also NEED an '\alias' for EACH other topic documented here.
 
-\title{Resursive computation of the conditional likelihood for the
+\title{Recursive computation of the conditional likelihood for the
   Quadratic Exponential Model proposed in Bartolucci & Nigro (2010)}
 
 \description{Recursively compute the denominator of the individual

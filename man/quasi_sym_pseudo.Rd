@@ -3,7 +3,7 @@
 \alias{quasi_sym_pseudo}
 %- Also NEED an '\alias' for EACH other topic documented here.
 
-\title{Resursive computation of pseudo conditional maximum likelihood
+\title{Recursive computation of pseudo conditional maximum likelihood
 method proposed by Bartolucci & Nigro (2012).}
 
 \description{Recursively compute the denominator of the individual
